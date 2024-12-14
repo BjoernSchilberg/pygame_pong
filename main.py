@@ -46,6 +46,7 @@ schriftart = pygame.font.Font("Ac437_Amstrad_PC.ttf", 50)
 texta = schriftart.render(str(a), True, pygame.Color(VORDERGRUND))
 textb = schriftart.render(str(b), True, pygame.Color(VORDERGRUND))
 
+clock = pygame.time.Clock()
 
 # Mainloop
 while True:
@@ -140,3 +141,4 @@ while True:
     bildschirm.blit(texta, (40, 20))
     bildschirm.blit(textb, (FENSTERBREITE - 120, 20))
     pygame.display.flip()
+    clock.tick(30)
